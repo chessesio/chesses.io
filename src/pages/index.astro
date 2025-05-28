@@ -1,8 +1,16 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import astroLogo from "../images/stackLogos/astro-logo.svg";
+import cssLogo from "../images/stackLogos/css-logo.svg";
+import htmlLogo from "../images/stackLogos/html-logo.svg";
+import jsLogo from "../images/stackLogos/js-logo.svg";
+import netlifyLogo from "../images/stackLogos/netlify-logo.svg";
+import posthogLogo from "../images/stackLogos/posthog-logo.svg";
+
+const pageTitle = "Kibet Chessesio";
 ---
 
-<BaseLayout>
+<BaseLayout pageTitle={pageTitle}>
   <component>
     <section class="wrapper-medium hero">
       <h1>The Beginings of a New Journey</h1>
@@ -10,7 +18,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
     <section class="wrapper-medium">
       <h2>A little about me</h2>
-      <div class="wrapper-p bg-highlight">
+      <div class="wrapper-p bg-highlight-dark">
         <p class="p-first">
           I am Kibet Chessesio, to my family, I am Flavo (Short for my first
           name) to most of my friends, I am simply Chess.
@@ -39,7 +47,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       </div>
     </section>
 
-    <section class="bg-highlight">
+    <section class="bg-highlight-dark">
       <div class="wrapper-medium">
         <div>
           <h2>This stack...</h2>
@@ -49,55 +57,69 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <div class="stack-container-wrapper">
           <div class="stack-container">
             <div class="stack-2-1">
-              <div class="stack bg-highlight-dark">
+              <div class="stack bg-highlight">
                 <div class="stack-title">
                   <h3>Layout and interactivity</h3>
                 </div>
 
                 <div class="stack-icon-container">
-                  <img class="stack-icon-tall" src="/images/stackLogos/html-logo.svg" alt="HTML"/>
-                  <img class="stack-icon-square" src="/images/stackLogos/css-logo.svg" alt="CSS"/>
-                  <img class="stack-icon-square" src="/images/stackLogos/js-logo.svg" alt="JavaScript"/>
+                  <img class="stack-icon-tall" src={htmlLogo.src} alt="HTML" />
+                  <img class="stack-icon-square" src={cssLogo.src} alt="CSS" />
+                  <img
+                    class="stack-icon-square"
+                    src={jsLogo.src}
+                    alt="JavaScript"
+                  />
                 </div>
               </div>
 
-              <div class="stack bg-highlight-dark">
+              <div class="stack bg-highlight">
                 <div class="stack-title">
                   <h3>Front-End Framework</h3>
                 </div>
 
                 <div class="stack-icon-container">
-                  <img class="stack-icon-wide" src="/images/stackLogos/astro-logo.svg" alt="Astro"/>
+                  <img
+                    class="stack-icon-wide"
+                    src={astroLogo.src}
+                    alt="Astro"
+                  />
                 </div>
               </div>
             </div>
 
             <div class="stack-1-1">
-              <div class="stack bg-highlight-dark">
+              <div class="stack bg-highlight">
                 <div class="stack-title">
                   <h3>Hosting</h3>
                 </div>
 
                 <div class="stack-icon-container">
-                  <img class="stack-icon-wide-tall" src="/images/stackLogos/netlify-logo.svg" alt="Netlify"/>
+                  <img
+                    class="stack-icon-wide-tall"
+                    src={netlifyLogo.src}
+                    alt="Netlify"
+                  />
                 </div>
               </div>
 
-              <div class="stack bg-highlight-dark">
+              <div class="stack bg-highlight">
                 <div class="stack-title">
                   <h3>Analytics</h3>
                 </div>
 
                 <div class="stack-icon-container">
-                  <img class="stack-icon-wide" src="/images/stackLogos/posthog-logo.svg" alt="PostHog"/>
+                  <img
+                    class="stack-icon-wide"
+                    src={posthogLogo.src}
+                    alt="PostHog"
+                  />
                 </div>
               </div>
-
             </div>
           </div>
         </div>
       </div>
     </section>
-
   </component>
 </BaseLayout>

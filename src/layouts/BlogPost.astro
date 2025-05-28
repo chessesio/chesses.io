@@ -1,0 +1,27 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import "../styles/blog-post.css";
+
+const { frontmatter } = Astro.props
+---
+
+<BaseLayout pageTitle={frontmatter.title}>
+  <component>
+    <section class="banner">
+      <img src={frontmatter.banner} alt={frontmatter.bannerAlt}/>
+    </section>
+    <div class="wrapper">
+      <section class="title">
+        <div class="heading-container">
+          <h1>{frontmatter.title}</h1>
+          <p>{frontmatter.description}</p>
+        </div>
+        <p>Published: {frontmatter.pubDate}</p>
+      </section>
+
+      <section class="content">
+        <slot />
+      </section>
+    </div>
+  </component>
+</BaseLayout>

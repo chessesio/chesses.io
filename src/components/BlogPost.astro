@@ -1,0 +1,19 @@
+---
+const {image, title, description, pubDate } = Astro.props;
+
+import "../styles/global.css";
+---
+
+<div class="blog-posts__post">
+  <div class="post-image-container">
+    <img src=`${image}`/>
+  </div>
+
+  <div class="post-text-container">
+    <div class="post-title-description">
+      <h1>{title}</h1>
+      <p>{description}</p>
+    </div>
+    <p class="pub-date">{pubDate}</p>
+  </div>
+</div>

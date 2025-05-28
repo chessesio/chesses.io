@@ -1,8 +1,15 @@
+---
+import "../styles/global.css";
+
+import sun from "../images/toggle_icons/sun.svg";
+import moon from "../images/toggle_icons/moon.svg";
+---
+
 <div class="toggle toggle-active-left">
   <div class="toggle-icon-container toggle-active-container">
-    <img src="/images/toggle_icons/moon.svg" alt="dark" />
+    <img src={moon.src} alt="dark" />
   </div>
   <div class="toggle-icon-container">
-    <img src="/images/toggle_icons/sun.svg" alt="light" />
+    <img src={sun.src} alt="light" />
   </div>
 </div>

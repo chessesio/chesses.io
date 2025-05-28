@@ -10,8 +10,8 @@ img {
 body {
   font-family: "space mono", "Courier New", monospace;
   color: #ffffff;
+  background-color: #1B1B1B;
   margin: 0;
-  background-color: #162312;
   font-size: 1rem;
   line-height: 1.6;
 
@@ -29,8 +29,8 @@ header {
   justify-content: space-between;
   position: sticky;
   top: 0;
-  background-color: #16231280;
-  backdrop-filter: blur(40px);
+  background-color: #1B1B1B80;
+  backdrop-filter: blur(64px);
   padding-inline: 5%;
   height: 4rem;
 
@@ -135,11 +135,11 @@ p {
 }
 
 .bg-highlight {
-  background-color: #23501b40;
+  background-color: #1B1B1B;
 }
 
 .bg-highlight-dark {
-  background-color: #162312;
+  background-color: #131314;
 }
 
 .wrapper-p {
@@ -217,7 +217,7 @@ p {
   text-overflow: ellipsis;
   border-radius: 0.5rem;
   padding-block: 0.5rem;
-  background-color: #162312;
+  background-color: #1B1B1B;
 }
 
 .stack h3:hover {

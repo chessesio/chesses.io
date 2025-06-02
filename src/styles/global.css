@@ -100,6 +100,28 @@ p {
   background-color: #bbcbb2;
 }
 
+/* nav styling */
+
+.nav-area {
+  display: flex;
+  gap: 1.5rem;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+}
+
+a:link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #FFFFFF;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 /* container spacing properties*/
 
 .wrapper-wide {
